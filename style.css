@@ -1,5 +1,121 @@
+
+:root {
+    --primary: #0C0C0C;
+    --secondary: #BA5A31;
+    --accent: #E59F71;
+    --primary-rgb: 12, 12, 12;
+    --secondary-rgb: 186, 90, 49;
+    --accent-rgb: 229, 159, 113;
+  }
+
 body {
     font-family: "Ponomar", system-ui;
     font-weight: 400;
     font-style: normal;
+    margin: 0;
+    background-color: var(--secondary)
+}
+
+
+
+
+
+header{
+    background-color: var(--primary);
+}
+
+.flex-container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+.flex-container-header a {
+    color: var(--accent);
+}
+.flex-container-header a:hover{
+    cursor: crosshair;
+}
+.flex-container-header a:active{
+    color: var(--secondary);
+}
+
+.flex-container-header div:first-child {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.flex-container-header div:last-child {
+    font-size: 1.3em;
+}
+
+.flex-container-header div:last-child a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* this is get rid of some default chrome stuff that was adding stuff that I didn't want */
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+
+
+
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+
+
+#navbar{
+    width: 50%;
+}
+
+.flex-container-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+.flex-container-navbar div{
+    font-size: 6em;
+    padding-bottom: 5%;
+}
+.flex-container-navbar a {
+    color: var(--primary);
+} 
+.flex-container-navbar a:hover {
+    font-style: italic;
+    cursor: crosshair;
+} 
+.flex-container-navbar a:active {
+    color: var(--accent);
+} 
+
+
+
+
+
+#hero {
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+
+footer p {
+    margin: 0;
 }
