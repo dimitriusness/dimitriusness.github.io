@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nolan Porras's About Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ponomar&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+
+<body>
+    <header>
+        <div class="flex-container-header">
+            <div>
+                <a href="index.html">N O L A N &nbsp; P O R R A S</a>
+            </div>
+            <div>
+                <a href="form.html">C o n t a c t &nbsp; M e</a>
+            </div>
+        </div>
+        
+    </header>
+
+    <div id="main">
+        <div>
+            <h1>who am i?</h1>
+            <p>I am a California boy that was raised in St.George, Utah.</p>
+            <p> I am the 9th child of 13 siblings (yes, all from the same parents).</p>
+            <p>I am a creative at heart, but can never seem to escape from the STEM disciplines</p>
+            <p>I like playing soccer, watching 90's anime, writing poetry, and listening to deepcuts from niche 70s albums. Ask me about my current obsession lol.</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *</p>
+            <p>I came to BYU to study advertising, but after a trip to Hawaii, I decided to try something else and began studying Economics. Soon after, I found myself knee deep in spreadsheets and articles from the Federal Reserve and have unfortunately loved every second of it.</p>
+            <p>As someone who enjoys both crunching numbers and coloring outside the lines, I'm looking to sharpen my data analytics skills at a company that’s obsessed with data and finding creative ways to put it into motion.</p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/images/me in Laguna.jpg" alt="me in Laguna">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="/images/me and hannah.jpg" alt="me and hannah">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="/images/me and stuffies.jpg" alt="me and stuffies">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="/images/me with my camera.jpg" alt="me with my camera">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="/images/peak.jpg" alt="yu yu hakusho">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+    
+    </div>
+
+
+    
+
+
+
+
+    <footer>
+        <p style="text-align: center;">&copy; n o l a n &nbsp;p o r r a s &nbsp;<em>2 0 2 5</em></p>
+    </footer>
+</body>
+</html>

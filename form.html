@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Nolan Porras's Contact Form</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ponomar&display=swap" rel="stylesheet">
     
+</head>
+
+
+
+
+
+<body>
+    <header>
+        <div class="flex-container-header">
+            <div>
+                <a href="index.html">N O L A N &nbsp; P O R R A S</a>
+            </div>
+            <div>
+                <a href="form.html">C o n t a c t &nbsp; M e</a>
+            </div>
+        </div>
+        
+    </header>
+
+
+
+
+    <div id="main">
+        <div class="contact-me">
+            <div class="my-contact">
+                <div class="my-contact-titles">
+                    <p>Email:</p>
+                    <p>Phone:</p>
+                    <p>LinkedIn:</p>
+                </div>
+
+                <div class="my-contact-info">
+                    <p>nolan.dimitrius@gmail.com</p>
+                    <p>(435) 632 - 9836</p>
+                    <p><a href="https://www.linkedin.com/in/nolanporras/" target="_blank">https://www.linkedin.com/in/nolanporras/</a></p>
+                </div>
+            </div>
+            
+
+
+
+            <!-- <button class="form-button" onclick="toggleForm()">Send me a message!</button>
+
+            <div class="user-form" id="popup-form">
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Your Name"><br>
+
+                    <input type="number" id="phone" name="phone" placeholder="Phone Number"><br>
+        
+                    <input type="email" id="email" name="email" placeholder="Email"><br>
+                    
+                    <input type="text" id="subject" name="subject" placeholder="Subject"><br>
+        
+                    <textarea type="textarea" id="message" name="message" placeholder="Message"></textarea><br>
+        
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <script>
+                function toggleForm() {
+                    let form = document.getElementById("popup-form");
+                    if (form.style.display === "none" || form.style.display === "") {
+                        form.style.display = "block";
+                    } else {
+                        form.style.display = "none";
+                    }
+                }
+            </script> -->
+
+
+            <button id="form-button" onclick="document.getElementById('id01').style.display='block'"">send me a message</button>
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-animate-top w3-card-4">
+                <header id="form-header" class="w3-container"> 
+                    <span onclick="document.getElementById('id01').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                    <h2>&nbsp;</h2>
+                </header>
+                <div id="form" class="w3-container">
+                    <div class="user-form">
+                        <form>
+                            <input type="text" id="name" name="name" placeholder="Your Name"><br>
+        
+                            <input type="number" id="phone" name="phone" placeholder="Phone Number"><br>
+                
+                            <input type="email" id="email" name="email" placeholder="Email"><br>
+                            
+                            <input type="text" id="subject" name="subject" placeholder="Subject"><br>
+                
+                            <textarea type="textarea" id="message" name="message" placeholder="Message"></textarea><br>
+                
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <footer id="form-header" class="w3-container">
+                    <p>&nbsp;</p>
+                </footer>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+
+
+    <footer>
+        <p style="text-align: center;">&copy; n o l a n &nbsp;p o r r a s &nbsp;<em>2 0 2 5</em></p>
+    </footer>
+
 </body>
 </html>

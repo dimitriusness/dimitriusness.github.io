@@ -9,6 +9,11 @@
   }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: normal;
+
     font-family: "Ponomar", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -16,13 +21,27 @@ body {
     background-color: var(--secondary)
 }
 
-
-
-
+#main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5%;
+    padding-bottom: 0;
+}
 
 header{
     background-color: var(--primary);
 }
+
+
+footer {
+    min-height: 40px;
+}
+
+
+
+
 
 .flex-container-header {
     display: flex;
@@ -62,19 +81,10 @@ header{
 /* this is get rid of some default chrome stuff that was adding stuff that I didn't want */
 a:-webkit-any-link {
     text-decoration: none;
+    cursor: crosshair;
 }
 
 
-
-
-
-#main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    padding-bottom: 0;
-}
 
 
 
@@ -118,4 +128,219 @@ a:-webkit-any-link {
 
 footer p {
     margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+.swiper {
+    width: 100%;
+    height: 50%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary) 
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  cursor: crosshair;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--accent)
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary)
+}
+
+
+
+
+
+
+
+
+
+
+/* RESUME PAGE */
+.resume {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 75vh;
+}
+
+
+
+
+
+
+
+
+
+
+/* SKILLS PAGE */
+#main.skillsPAGE{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#main.skillsPAGE h3{
+    padding-bottom: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PROJECTS PAGE */
+.projects-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FORM PAGE */
+.my-contact{
+    font-size: 2em;
+    display: flex;
+}
+
+.my-contact a{
+    color: var(--primary);
+}
+
+.my-contact a:hover{
+    border-bottom: 1px solid var(--primary);
+}
+
+.my-contact-info{
+    padding-left: 5%;
+}
+
+
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-button {
+    background-color: var(--primary);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 1.3em;
+    padding: 16px 20px;
+    border: none;
+    cursor: crosshair;
+    width: 280px;
+    margin-top: 10%;
+  }
+
+  #form-button:hover{
+    border: 2px solid var(--accent);
+    padding: 14px 18px;
+    background-color: var(--primary);
+}
+
+#form-header{
+    background-color: var(--primary);
+    color: var(--accent);
+}
+
+#form-footer{
+    background-color: var(--primary);
+    color: var(--accent);
+}
+
+
+#form{
+    background-color: var(--primary);
+}  
+
+
+.user-form {
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 75%;
+    height: 45px;
+}
+
+textarea{
+    width: 75%;
+    height: 200px;
+}
+
+input[type="submit"] {
+    background-color: var(--secondary);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent);
+}
+
+h3{
+    width: max-content;
 }
